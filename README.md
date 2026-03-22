@@ -89,7 +89,7 @@ pip install -r requirements.txt
 
 ```bash
 cd back-end
-flask --app main run
+python ./main.py
 ```
 
 O banco `todo_list` e a tabela `tarefa` serão criados automaticamente na primeira execução. O servidor Flask ficará disponível em `http://localhost:5000`.
