@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 To-Do List</h1>
+
+        <!-- Formulário de criação -->
+        <form id="form-tarefa">
+            <input type="text" id="input-titulo" placeholder="Título da tarefa" required>
+            <input type="text" id="input-descricao" placeholder="Descrição (opcional)">
+            <button type="submit" id="btn-salvar">Adicionar</button>
+            <button type="button" id="btn-cancelar" class="hidden">Cancelar</button>
+        </form>
+
+        <!-- Lista de tarefas -->
+        <ul id="lista-tarefas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

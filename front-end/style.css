@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #1a1a2e;
+}
+
+/* ── Formulário ──────────────────────────────────────────────────── */
+#form-tarefa {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+#form-tarefa input {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#form-tarefa input:focus {
+    outline: none;
+    border-color: #4361ee;
+}
+
+#form-tarefa button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#btn-salvar {
+    background-color: #4361ee;
+    color: #fff;
+}
+
+#btn-salvar:hover {
+    background-color: #3a56d4;
+}
+
+#btn-cancelar {
+    background-color: #aaa;
+    color: #fff;
+}
+
+#btn-cancelar:hover {
+    background-color: #888;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ── Lista de Tarefas ────────────────────────────────────────────── */
+#lista-tarefas {
+    list-style: none;
+}
+
+.tarefa-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.2s;
+}
+
+.tarefa-item.concluida .tarefa-info h3 {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.tarefa-item.concluida .tarefa-info p {
+    color: #bbb;
+}
+
+.tarefa-check {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #4361ee;
+}
+
+.tarefa-info {
+    flex: 1;
+}
+
+.tarefa-info h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.tarefa-info p {
+    font-size: 13px;
+    color: #777;
+}
+
+.tarefa-acoes {
+    display: flex;
+    gap: 6px;
+}
+
+.tarefa-acoes button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background-color: #d9972b;
+}
+
+.btn-excluir {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-excluir:hover {
+    background-color: #c0392b;
+}
