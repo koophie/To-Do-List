@@ -57,8 +57,6 @@ erDiagram
 
 - **TAREFA**: Entidade única do sistema. Armazena o título, descrição opcional, status de conclusão e datas de controle (criação e última atualização).
 
----
-
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
