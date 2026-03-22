@@ -40,8 +40,8 @@ def init_db():
     """)
     conn.commit()
     conn.close()
+    print("Banco de dados e tabela criados com sucesso.")
 
 
 if __name__ == '__main__':
     init_db()
-    print("Banco de dados e tabela criados com sucesso.")
