@@ -82,6 +82,7 @@ DB_CONFIG = {
 
 ```bash
 cd back-end
+& "\.venv\Scripts\Activate.ps1"
 pip install -r requirements.txt
 ```
 
@@ -89,6 +90,7 @@ pip install -r requirements.txt
 
 ```bash
 cd back-end
+& "\.venv\Scripts\Activate.ps1"
 python ./main.py
 ```
 
